@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D70DAE5D1CBF4A8A00744529 /* FinishedQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DAE5C1CBF4A8A00744529 /* FinishedQuizViewController.swift */; };
+		D70DAE5F1CC1E87D00744529 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DAE5E1CC1E87D00744529 /* Quiz.swift */; };
+		D70DAE611CC1F9CF00744529 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DAE601CC1F9CF00744529 /* DateExtension.swift */; };
+		D76BA34D1CB0B61B00287393 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA34C1CB0B61B00287393 /* QuizViewController.swift */; };
+		D76BA34F1CB36E1F00287393 /* ValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA34E1CB36E1F00287393 /* ValueViewController.swift */; };
+		D76BA3511CB3702600287393 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA3501CB3702600287393 /* OptionViewController.swift */; };
+		D796AFE51CAB877A00ADECC6 /* DK Crayon Crumble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D796AFE41CAB877A00ADECC6 /* DK Crayon Crumble.ttf */; };
+		D7B047771CC475210082D057 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7B047761CC475210082D057 /* correct.wav */; };
+		D7B047791CC475AE0082D057 /* incorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7B047781CC475AE0082D057 /* incorrect.wav */; };
+		D7B0477D1CC5E68C0082D057 /* QuizSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0477C1CC5E68C0082D057 /* QuizSettingsViewController.swift */; };
+		D7B0477F1CC882D80082D057 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0477E1CC882D70082D057 /* Settings.swift */; };
+		D7B0DF6A1CAE0709002527C9 /* EquationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0DF691CAE0709002527C9 /* EquationViewController.swift */; };
+		D7B0DF6C1CAE0BDE002527C9 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0DF6B1CAE0BDE002527C9 /* AnswerViewController.swift */; };
+		D7B0DF6E1CAE18DD002527C9 /* FlashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0DF6D1CAE18DD002527C9 /* FlashCard.swift */; };
+		D7B0DF701CAE19AF002527C9 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0DF6F1CAE19AF002527C9 /* Cards.swift */; };
+		D7B0DF761CAE202E002527C9 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B0DF751CAE202E002527C9 /* HomePageViewController.swift */; };
+		D7C6D3E31CA8DCF90084F86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D3E21CA8DCF90084F86A /* AppDelegate.swift */; };
+		D7C6D3E51CA8DCF90084F86A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D3E41CA8DCF90084F86A /* ViewController.swift */; };
+		D7C6D3E81CA8DCF90084F86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6D3E61CA8DCF90084F86A /* Main.storyboard */; };
+		D7C6D3EA1CA8DCF90084F86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C6D3E91CA8DCF90084F86A /* Assets.xcassets */; };
+		D7C6D3ED1CA8DCF90084F86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C6D3EB1CA8DCF90084F86A /* LaunchScreen.storyboard */; };
+		D7C6D3F81CA8DCFA0084F86A /* FlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D3F71CA8DCFA0084F86A /* FlashCardsTests.swift */; };
+		D7C6D4031CA8DCFA0084F86A /* FlashCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D4021CA8DCFA0084F86A /* FlashCardsUITests.swift */; };
+		D7C6D4111CA8DFF60084F86A /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D4101CA8DFF60084F86A /* QuizTableViewCell.swift */; };
+		D7C6D4131CA8E46D0084F86A /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D4121CA8E46D0084F86A /* Subject.swift */; };
+		D7C6D4151CA8E4B70084F86A /* QuizTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6D4141CA8E4B70084F86A /* QuizTableViewController.swift */; };
+		D7DF32B31CD4835000FA2E04 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF32B21CD4834F00FA2E04 /* iAd.framework */; };
+		D7DF333E1CDAF65C00FA2E04 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF333D1CDAF65C00FA2E04 /* AdSupport.framework */; };
+		D7DF334E1CDAF6E700FA2E04 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF334D1CDAF6E700FA2E04 /* MediaPlayer.framework */; };
+		D7DF33501CDAF6EB00FA2E04 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF334F1CDAF6EB00FA2E04 /* MessageUI.framework */; };
+		D7DF33561CDAF7F000FA2E04 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF33551CDAF7F000FA2E04 /* GoogleMobileAds.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7C6D3F41CA8DCFA0084F86A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7C6D3D71CA8DCF90084F86A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7C6D3DE1CA8DCF90084F86A;
+			remoteInfo = FlashCards;
+		};
+		D7C6D3FF1CA8DCFA0084F86A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7C6D3D71CA8DCF90084F86A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7C6D3DE1CA8DCF90084F86A;
+			remoteInfo = FlashCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D70DAE5C1CBF4A8A00744529 /* FinishedQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedQuizViewController.swift; sourceTree = "<group>"; };
+		D70DAE5E1CC1E87D00744529 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		D70DAE601CC1F9CF00744529 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		D76BA34C1CB0B61B00287393 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		D76BA34E1CB36E1F00287393 /* ValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueViewController.swift; sourceTree = "<group>"; };
+		D76BA3501CB3702600287393 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		D796AFE41CAB877A00ADECC6 /* DK Crayon Crumble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DK Crayon Crumble.ttf"; path = "FlashCards/DK Crayon Crumble.ttf"; sourceTree = "<group>"; };
+		D7B047761CC475210082D057 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		D7B047781CC475AE0082D057 /* incorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incorrect.wav; sourceTree = "<group>"; };
+		D7B0477C1CC5E68C0082D057 /* QuizSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizSettingsViewController.swift; sourceTree = "<group>"; };
+		D7B0477E1CC882D70082D057 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D7B0DF691CAE0709002527C9 /* EquationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationViewController.swift; sourceTree = "<group>"; };
+		D7B0DF6B1CAE0BDE002527C9 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		D7B0DF6D1CAE18DD002527C9 /* FlashCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCard.swift; sourceTree = "<group>"; };
+		D7B0DF6F1CAE19AF002527C9 /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		D7B0DF751CAE202E002527C9 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		D7C6D3DF1CA8DCF90084F86A /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C6D3E21CA8DCF90084F86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7C6D3E41CA8DCF90084F86A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7C6D3E71CA8DCF90084F86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7C6D3E91CA8DCF90084F86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7C6D3EC1CA8DCF90084F86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7C6D3EE1CA8DCFA0084F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C6D3F31CA8DCFA0084F86A /* FlashCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C6D3F71CA8DCFA0084F86A /* FlashCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsTests.swift; sourceTree = "<group>"; };
+		D7C6D3F91CA8DCFA0084F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C6D3FE1CA8DCFA0084F86A /* FlashCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C6D4021CA8DCFA0084F86A /* FlashCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsUITests.swift; sourceTree = "<group>"; };
+		D7C6D4041CA8DCFA0084F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C6D4101CA8DFF60084F86A /* QuizTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
+		D7C6D4121CA8E46D0084F86A /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		D7C6D4141CA8E4B70084F86A /* QuizTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTableViewController.swift; sourceTree = "<group>"; };
+		D7DF32B21CD4834F00FA2E04 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D7DF333D1CDAF65C00FA2E04 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D7DF334D1CDAF6E700FA2E04 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D7DF334F1CDAF6EB00FA2E04 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D7DF33551CDAF7F000FA2E04 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7C6D3DC1CA8DCF90084F86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF33561CDAF7F000FA2E04 /* GoogleMobileAds.framework in Frameworks */,
+				D7DF33501CDAF6EB00FA2E04 /* MessageUI.framework in Frameworks */,
+				D7DF334E1CDAF6E700FA2E04 /* MediaPlayer.framework in Frameworks */,
+				D7DF333E1CDAF65C00FA2E04 /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3F01CA8DCFA0084F86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3FB1CA8DCFA0084F86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DF32B31CD4835000FA2E04 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D796AFE61CAB890200ADECC6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D796AFE41CAB877A00ADECC6 /* DK Crayon Crumble.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		D7C6D3D61CA8DCF90084F86A = {
+			isa = PBXGroup;
+			children = (
+				D7DF33551CDAF7F000FA2E04 /* GoogleMobileAds.framework */,
+				D7DF334F1CDAF6EB00FA2E04 /* MessageUI.framework */,
+				D7DF334D1CDAF6E700FA2E04 /* MediaPlayer.framework */,
+				D7DF333D1CDAF65C00FA2E04 /* AdSupport.framework */,
+				D7DF32B21CD4834F00FA2E04 /* iAd.framework */,
+				D796AFE61CAB890200ADECC6 /* Font */,
+				D7C6D3E11CA8DCF90084F86A /* FlashCards */,
+				D7C6D3F61CA8DCFA0084F86A /* FlashCardsTests */,
+				D7C6D4011CA8DCFA0084F86A /* FlashCardsUITests */,
+				D7C6D3E01CA8DCF90084F86A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7C6D3E01CA8DCF90084F86A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6D3DF1CA8DCF90084F86A /* FlashCards.app */,
+				D7C6D3F31CA8DCFA0084F86A /* FlashCardsTests.xctest */,
+				D7C6D3FE1CA8DCFA0084F86A /* FlashCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7C6D3E11CA8DCF90084F86A /* FlashCards */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6D3E61CA8DCF90084F86A /* Main.storyboard */,
+				D7B0DF6F1CAE19AF002527C9 /* Cards.swift */,
+				D70DAE601CC1F9CF00744529 /* DateExtension.swift */,
+				D7B047761CC475210082D057 /* correct.wav */,
+				D7B047781CC475AE0082D057 /* incorrect.wav */,
+				D7B0DF6D1CAE18DD002527C9 /* FlashCard.swift */,
+				D70DAE5E1CC1E87D00744529 /* Quiz.swift */,
+				D7B0477E1CC882D70082D057 /* Settings.swift */,
+				D7C6D4121CA8E46D0084F86A /* Subject.swift */,
+				D7B0DF6B1CAE0BDE002527C9 /* AnswerViewController.swift */,
+				D7B0DF691CAE0709002527C9 /* EquationViewController.swift */,
+				D70DAE5C1CBF4A8A00744529 /* FinishedQuizViewController.swift */,
+				D7B0DF751CAE202E002527C9 /* HomePageViewController.swift */,
+				D76BA3501CB3702600287393 /* OptionViewController.swift */,
+				D7B0477C1CC5E68C0082D057 /* QuizSettingsViewController.swift */,
+				D7C6D4141CA8E4B70084F86A /* QuizTableViewController.swift */,
+				D7C6D4101CA8DFF60084F86A /* QuizTableViewCell.swift */,
+				D76BA34C1CB0B61B00287393 /* QuizViewController.swift */,
+				D7C6D3E41CA8DCF90084F86A /* ViewController.swift */,
+				D76BA34E1CB36E1F00287393 /* ValueViewController.swift */,
+				D7C6D3E21CA8DCF90084F86A /* AppDelegate.swift */,
+				D7C6D3E91CA8DCF90084F86A /* Assets.xcassets */,
+				D7C6D3EB1CA8DCF90084F86A /* LaunchScreen.storyboard */,
+				D7C6D3EE1CA8DCFA0084F86A /* Info.plist */,
+			);
+			path = FlashCards;
+			sourceTree = "<group>";
+		};
+		D7C6D3F61CA8DCFA0084F86A /* FlashCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6D3F71CA8DCFA0084F86A /* FlashCardsTests.swift */,
+				D7C6D3F91CA8DCFA0084F86A /* Info.plist */,
+			);
+			path = FlashCardsTests;
+			sourceTree = "<group>";
+		};
+		D7C6D4011CA8DCFA0084F86A /* FlashCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6D4021CA8DCFA0084F86A /* FlashCardsUITests.swift */,
+				D7C6D4041CA8DCFA0084F86A /* Info.plist */,
+			);
+			path = FlashCardsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7C6D3DE1CA8DCF90084F86A /* FlashCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7C6D4071CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCards" */;
+			buildPhases = (
+				D7C6D3DB1CA8DCF90084F86A /* Sources */,
+				D7C6D3DC1CA8DCF90084F86A /* Frameworks */,
+				D7C6D3DD1CA8DCF90084F86A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashCards;
+			productName = FlashCards;
+			productReference = D7C6D3DF1CA8DCF90084F86A /* FlashCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7C6D3F21CA8DCFA0084F86A /* FlashCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7C6D40A1CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCardsTests" */;
+			buildPhases = (
+				D7C6D3EF1CA8DCFA0084F86A /* Sources */,
+				D7C6D3F01CA8DCFA0084F86A /* Frameworks */,
+				D7C6D3F11CA8DCFA0084F86A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7C6D3F51CA8DCFA0084F86A /* PBXTargetDependency */,
+			);
+			name = FlashCardsTests;
+			productName = FlashCardsTests;
+			productReference = D7C6D3F31CA8DCFA0084F86A /* FlashCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7C6D3FD1CA8DCFA0084F86A /* FlashCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7C6D40D1CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCardsUITests" */;
+			buildPhases = (
+				D7C6D3FA1CA8DCFA0084F86A /* Sources */,
+				D7C6D3FB1CA8DCFA0084F86A /* Frameworks */,
+				D7C6D3FC1CA8DCFA0084F86A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7C6D4001CA8DCFA0084F86A /* PBXTargetDependency */,
+			);
+			name = FlashCardsUITests;
+			productName = FlashCardsUITests;
+			productReference = D7C6D3FE1CA8DCFA0084F86A /* FlashCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7C6D3D71CA8DCF90084F86A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tyler Bernth";
+				TargetAttributes = {
+					D7C6D3DE1CA8DCF90084F86A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4AGFE4N8L4;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					D7C6D3F21CA8DCFA0084F86A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D7C6D3DE1CA8DCF90084F86A;
+					};
+					D7C6D3FD1CA8DCFA0084F86A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D7C6D3DE1CA8DCF90084F86A;
+					};
+				};
+			};
+			buildConfigurationList = D7C6D3DA1CA8DCF90084F86A /* Build configuration list for PBXProject "FlashCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7C6D3D61CA8DCF90084F86A;
+			productRefGroup = D7C6D3E01CA8DCF90084F86A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7C6D3DE1CA8DCF90084F86A /* FlashCards */,
+				D7C6D3F21CA8DCFA0084F86A /* FlashCardsTests */,
+				D7C6D3FD1CA8DCFA0084F86A /* FlashCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7C6D3DD1CA8DCF90084F86A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C6D3ED1CA8DCF90084F86A /* LaunchScreen.storyboard in Resources */,
+				D7C6D3EA1CA8DCF90084F86A /* Assets.xcassets in Resources */,
+				D796AFE51CAB877A00ADECC6 /* DK Crayon Crumble.ttf in Resources */,
+				D7C6D3E81CA8DCF90084F86A /* Main.storyboard in Resources */,
+				D7B047791CC475AE0082D057 /* incorrect.wav in Resources */,
+				D7B047771CC475210082D057 /* correct.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3F11CA8DCFA0084F86A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3FC1CA8DCFA0084F86A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7C6D3DB1CA8DCF90084F86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C6D4131CA8E46D0084F86A /* Subject.swift in Sources */,
+				D7B0DF6C1CAE0BDE002527C9 /* AnswerViewController.swift in Sources */,
+				D7B0DF6E1CAE18DD002527C9 /* FlashCard.swift in Sources */,
+				D7B0DF701CAE19AF002527C9 /* Cards.swift in Sources */,
+				D70DAE5D1CBF4A8A00744529 /* FinishedQuizViewController.swift in Sources */,
+				D76BA34F1CB36E1F00287393 /* ValueViewController.swift in Sources */,
+				D7B0477F1CC882D80082D057 /* Settings.swift in Sources */,
+				D7C6D4151CA8E4B70084F86A /* QuizTableViewController.swift in Sources */,
+				D7B0DF6A1CAE0709002527C9 /* EquationViewController.swift in Sources */,
+				D7B0477D1CC5E68C0082D057 /* QuizSettingsViewController.swift in Sources */,
+				D7C6D3E51CA8DCF90084F86A /* ViewController.swift in Sources */,
+				D70DAE611CC1F9CF00744529 /* DateExtension.swift in Sources */,
+				D7C6D4111CA8DFF60084F86A /* QuizTableViewCell.swift in Sources */,
+				D7B0DF761CAE202E002527C9 /* HomePageViewController.swift in Sources */,
+				D70DAE5F1CC1E87D00744529 /* Quiz.swift in Sources */,
+				D7C6D3E31CA8DCF90084F86A /* AppDelegate.swift in Sources */,
+				D76BA3511CB3702600287393 /* OptionViewController.swift in Sources */,
+				D76BA34D1CB0B61B00287393 /* QuizViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3EF1CA8DCFA0084F86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C6D3F81CA8DCFA0084F86A /* FlashCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6D3FA1CA8DCFA0084F86A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C6D4031CA8DCFA0084F86A /* FlashCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7C6D3F51CA8DCFA0084F86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7C6D3DE1CA8DCF90084F86A /* FlashCards */;
+			targetProxy = D7C6D3F41CA8DCFA0084F86A /* PBXContainerItemProxy */;
+		};
+		D7C6D4001CA8DCFA0084F86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7C6D3DE1CA8DCF90084F86A /* FlashCards */;
+			targetProxy = D7C6D3FF1CA8DCFA0084F86A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7C6D3E61CA8DCF90084F86A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7C6D3E71CA8DCF90084F86A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7C6D3EB1CA8DCF90084F86A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7C6D3EC1CA8DCF90084F86A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7C6D4051CA8DCFA0084F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7C6D4061CA8DCFA0084F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inheirited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7C6D4081CA8DCFA0084F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlashCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MathFacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D7C6D4091CA8DCFA0084F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlashCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MathFacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		D7C6D40B1CA8DCFA0084F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlashCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bernth.FlashCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashCards.app/FlashCards";
+			};
+			name = Debug;
+		};
+		D7C6D40C1CA8DCFA0084F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlashCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bernth.FlashCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashCards.app/FlashCards";
+			};
+			name = Release;
+		};
+		D7C6D40E1CA8DCFA0084F86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlashCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bernth.FlashCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlashCards;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D7C6D40F1CA8DCFA0084F86A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlashCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bernth.FlashCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlashCards;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7C6D3DA1CA8DCF90084F86A /* Build configuration list for PBXProject "FlashCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C6D4051CA8DCFA0084F86A /* Debug */,
+				D7C6D4061CA8DCFA0084F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7C6D4071CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C6D4081CA8DCFA0084F86A /* Debug */,
+				D7C6D4091CA8DCFA0084F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7C6D40A1CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C6D40B1CA8DCFA0084F86A /* Debug */,
+				D7C6D40C1CA8DCFA0084F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7C6D40D1CA8DCFA0084F86A /* Build configuration list for PBXNativeTarget "FlashCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C6D40E1CA8DCFA0084F86A /* Debug */,
+				D7C6D40F1CA8DCFA0084F86A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7C6D3D71CA8DCF90084F86A /* Project object */;
+}
